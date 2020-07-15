@@ -1,0 +1,41 @@
+@startuml
+
+hide empty members
+skinparam handwritten true
+
+class EventStorming
+
+class Timeline
+
+class Portion
+
+class Event
+
+class EventTrigger
+
+class Command
+
+class User
+
+EventStorming ..> Timeline : creates
+
+Timeline o-- Portion : consists of
+
+Portion o-- Event : sequence of
+
+EventTrigger --> Event : triggers
+
+EventTrigger <|-- Command
+
+User --> Command : invokes
+
+Policy --> Command : invokes
+
+User --> "Read Model" : needs
+Policy --> "Read Model" : needs
+
+"Read Model" --> Event : built from
+
+Timeline --> "Validated Narrative" : describes
+
+@enduml
