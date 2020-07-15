@@ -1,8 +1,16 @@
 = A domain model of Event Storming
 
-The purpose of this domain model is to identify and name event storming concepts and the relationships between the concepts.
+The purpose of this domain model is to name Event Storming concepts and the relationships between the concepts.
+It's motivated by some Twitter threads:
+
+* https://twitter.com/crichardson/status/1282760934923005952
+* https://twitter.com/crichardson/status/1283114985275572224
+
+== Big picture
 
 image::./event-storming.png[]
+
+== Description
 
 The purpose of each element is as follows:
 

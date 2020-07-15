@@ -11,8 +11,6 @@ class Portion
 
 class Event
 
-class EventTrigger
-
 class Command
 
 class User
@@ -21,11 +19,15 @@ EventStorming ..> Timeline : creates
 
 Timeline o-- Portion : consists of
 
+Portion <|-- Swimlane
+Portion <|-- LifecyclePhase
+
+LifecyclePhase --> Event : start event
+LifecyclePhase --> Event : end event
+
 Portion o-- Event : sequence of
 
-EventTrigger --> Event : triggers
-
-EventTrigger <|-- Command
+Command --> Event : triggers
 
 User --> Command : invokes
 
@@ -37,5 +39,9 @@ Policy --> "Read Model" : needs
 "Read Model" --> Event : built from
 
 Timeline --> "Validated Narrative" : describes
+
+Event --> Policy : triggers
+
+"External System" --> Event : emits
 
 @enduml
