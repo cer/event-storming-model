@@ -28,6 +28,7 @@ LifecyclePhase --> Event : end event
 Portion o-- Event : sequence of
 
 Command --> Event : triggers
+(Command, Event) . Aggregate
 
 User --> Command : invokes
 
