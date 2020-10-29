@@ -15,5 +15,5 @@ image::./event-storming.png[]
 The purpose of each element is as follows:
 
 * Event Storming - a process that creates a Timeline
-* Timeline - describes a validated narrative and consists of a sequence of events
-* TODO
+* Timeline - describes a validated narrative and consists of a sequence of events.
+* Portion - part of a timeline

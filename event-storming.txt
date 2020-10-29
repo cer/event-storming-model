@@ -44,4 +44,6 @@ Event --> Policy : triggers
 
 "External System" --> Event : emits
 
+"Passing of time" --> Event : triggers
+
 @enduml
